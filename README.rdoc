@@ -1,0 +1,11 @@
+== README
+
+This is a default Rails 4 template which includes the following:
+
+* Rails 4
+
+* Sass / Bourbon / Neat
+
+* CSS Reset
+
+* Index page
