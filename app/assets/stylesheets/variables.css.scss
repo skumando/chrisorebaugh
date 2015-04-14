@@ -1,0 +1,32 @@
+$font1: "Open Sans", helvetica, san-serif;
+$e-blue:#1b69df;
+$p-nav: #113265;
+$footer: #113265;
+$text: #113265;
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@mixin small-outer{
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+//LONG SHADOW
+@function makelongshadow($color) {
+  $val: 0px 0px $color;
+  @for $i from 1 through 300 {
+    $val: #{$val}, #{$i}px #{$i}px #{$color};
+  }
+  @return $val;
+}
+@mixin longshadow($color) {
+  text-shadow: makelongshadow($color);
+}
+$color: #082249;

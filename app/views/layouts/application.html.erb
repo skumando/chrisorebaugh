@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rails Sandbox</title>
+  <title>Chris Orebaugh</title>
+  <!--
+    Hi!  If you are reading this welcome to my site.  It is built using RoR and hosted on
+    OpenShift. -->
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<%= render :partial => 'layouts/svgdefs' %>
+<div class="page">
+<header>
+  <div class="header-inner">
+    <a class="logo">Chris Orebaugh</a>
+    <nav>
+      <a class="nav-main" href="#recent-projects">Recent Projects</a>
+      <a class="nav-main" href="/home">About Me</a>
+      <a class="nav-main">Contact</a>
+    </nav>
+  </div>
+
+</header>
 
 <%= yield %>
 
+<footer>
+  <div class="footer-inner">
+    <p>
+      <a href="mailto:chirsorebaugh@gmail.com">chrisorebaugh@gmail.com</a><br>
+      630.373.3447<br>
+      <a>Resume</a>
+    </p>
+    <a href="/backstop-mobile" >
+      <svg class="svg_footer">
+        <use xlink:href="#svg_github"></use>
+      </svg>
+    </a>
+    <a href="/backstop-mobile" >
+      <svg class="svg_footer">
+        <use xlink:href="#svg_linkedin"></use>
+      </svg>
+    </a>
+  </div>
+</footer>
+</div>
 </body>
 </html>

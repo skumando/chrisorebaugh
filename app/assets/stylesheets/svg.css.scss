@@ -1,0 +1,57 @@
+.svg_nav{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left:.625em;
+}
+.svg_h1{
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 1em;
+}
+.svg_nav_hover{
+  position: absolute;
+  left:.625em;
+  width:0;
+  height:0;
+}
+.svg_footer{
+  width: 40px;
+  height:40px;
+  float:left;
+  margin-right:10px;
+}
+#svg_mobile,
+#svg_road,
+#svg_display,
+#svg_lab,
+#svg_search,
+#svg_css3,
+#svg_map2,
+#svg_profile,
+#svg_backstop {
+  path{
+    fill: $p-nav;
+  }
+}
+#svg_mobile_hover,
+#svg_road_hover,
+#svg_display_hover,
+#svg_lab_hover,
+#svg_search_hover,
+#svg_css3_hover,
+#svg_map2_hover,
+#svg_profile_hover,
+#svg_backstop_hover,
+#svg_appstore,
+#svg_android,
+#svg_play{
+  path{
+    fill: white;
+  }
+}
+#svg_linkedin,
+#svg_github{
+  fill: white;
+}
