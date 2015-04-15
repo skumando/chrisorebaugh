@@ -44,10 +44,9 @@ a.button{
     float: left;
   }
   &:hover{
-    background: orange;
+    background: $e-blue;
   }
 }
-
 body {
   background: white;
   background: #fff;
@@ -159,9 +158,12 @@ section.portfolio{
   }
 }
 .crm-image{
-  max-width: 100%;
+  width: 100%;
   border: 1px solid #777;
   margin: 2em 0;
+  @include media($teneighty) {
+    padding: 0 1em;
+  }
 }
 svg{
   transition:1s;
