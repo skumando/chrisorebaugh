@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f3f6e3b5-668d-42d0-b369-c7886399fcb6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/pages.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/pages.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/backstop.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/backstop.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/home.html.erb" />
     </list>
     <ignored path="corebaugh.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,7 +53,7 @@
           <file leaf-file-name="backstop.html.erb" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/pages/backstop.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="24" column="0" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.72727275">
+                <state line="24" column="0" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.54545456">
                   <folding />
                 </state>
               </provider>
@@ -122,7 +120,7 @@
           <file leaf-file-name="pages.css.scss" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages.css.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="160" column="13" selection-start="2509" selection-end="2509" vertical-scroll-proportion="0.3612663">
+                <state line="141" column="14" selection-start="2238" selection-end="2238" vertical-scroll-proportion="0.47486034">
                   <folding />
                 </state>
               </provider>
@@ -874,7 +872,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/backstop.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.72727275">
+        <state line="24" column="0" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.54545456">
           <folding />
         </state>
       </provider>
@@ -888,7 +886,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pages.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="13" selection-start="2509" selection-end="2509" vertical-scroll-proportion="0.3612663">
+        <state line="141" column="14" selection-start="2238" selection-end="2238" vertical-scroll-proportion="0.47486034">
           <folding />
         </state>
       </provider>
