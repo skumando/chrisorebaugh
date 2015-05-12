@@ -7,8 +7,8 @@
     </svg>
     <h1>Pitching &amp; Prototyping</h1>
 
-    <p class="quote">
-      The best UX strategists create delight by working in the intersection of business and design.
+    <p>
+      <span class="quote">"The best UX strategists create delight by working in the intersection of business and design."</span>
       <br>
       - Jared Spool
     </p>
@@ -16,7 +16,7 @@
       When I heard Jared Spool say this at a conference it really drove me to think about what motivates people in their different roles.  I understood that if I wanted other people think about the importance of UX the way I do, I would have to align my goals with theirs.
     </p>
     <p>
-      Business Strategic Priorities
+      <b>Business Strategic Priorities</b>
     </p>
     <ol>
       <li>Increase Revenue                   </li>
@@ -25,27 +25,44 @@
       <li>Increase existing business         </li>
       <li>Increasing Shareholder Value       </li>
     </ol>
+
+    <h2>The Pitch</h2>
     <p>
-      I presented to our executive team the value a streamlined user interface and experience would have on our application.  I included statistics from Forester Design Research, XX, and XX.  I outlined the roadmap of required features and changes necessary to move the application forward.  I included a fictitional press release for  the launch of the new application design, and finally showed off an interactive prototype that aligned these principles so they could get hands on time with the functionality.
+      I presented to our executive team the value a streamlined user interface and experience would have on our application.  I included statistics from Forester Design Research, DMI Journal, and Stanford Web Credibility Research.  I outlined the roadmap of required features and changes necessary to move the application forward.  I included a fictional press release and marketing sheet for the launch of the new application design, and finally showed off an interactive prototype that aligned these principles so they could get hands on time with the functionality.
     </p>
+    <a href="/pdf/PrototypeFlyer.pdf" target="_blank">
+      <img src="<%= asset_path 'prototype_flyer.png' %>" class="proto-image"/>
+    </a>
+    <h4 class="desc">
+      Fake Marketing Launch Sheet.
+    </h4>
     <p>
-      The principals behind the design decisions is to start with the broadest features and tools that all users interact with in the system and make those the best they can be.  From there, focus on updating more specialized features. The items that need adjustment in the application include, but are not limited to the following pieces of functionality:
+      The strategy for revamping the platform is to  focus on the broadest features and tools that all users interact with in the system and make those the best they can be.  From there, focus on updating more specialized features. The items that need adjustment in the application include, but are not limited to the following pieces of functionality:
     </p>
     <ul>
-      <li>Inconsistent navigation                                                                             </li>
-      <li>Not tablet/ touch friendly                                                                          </li>
-      <li>Many ways to complete the same task with different UIs                                              </li>
-      <li>Methods for conducting Search are spread out throughout the application and have an inconsistent UI </li>
+      <li>Navigation</li>
+      <li>Search</li>
+      <li>Responsive formatting, tablet and touch capabilities</li>
+      <li>Inconsistent design patterns</li>
     </ul>
+    <h2>The Prototype</h2>
     <p>
-      The prototype was built in a manner that focused on aesthetics and functionality (the code is not pretty).  The UI has also been through several iterations at this point based upon interviews and user feedback.
+      The prototype focuses on the the broad feature set and shows off how the application could function with a new layout.  The UI has also been through several iterations at this point based upon interviews and user feedback (the code is not pretty).  The navigation is dynamic, the content is static.
     </p>
+    <img src="<%= asset_path 'proto.png' %>" class="crm-image"/>
     <p>
-      Built in RoR for easy access the asset pipeline, railsie stuff, scss, bourbon,  etc.
-    <br>
-      Free hosting on Red Hat open shift.  It may take up to 30 seconds for first load as the server boots up.
+      It was built in RoR for easy access the asset pipeline, railsie stuff, and scss.  Free hosting thanks to Red Hat open shift :), as such it may take up to 30 seconds for first load as the server boots up.
     </p>
+
   </div>
+  <p class="button-links">
+    <a href="http://theunicorn-backstopui.rhcloud.com" class="button">
+      <svg class="svg_button">
+        <use xlink:href="#svg_lab_hover"></use>
+      </svg>
+      &nbsp;Tour the Prototype
+    </a>
+  </p>
 
   <%= render :partial => 'layouts/project_list' %>
 

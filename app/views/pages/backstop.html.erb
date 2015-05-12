@@ -1,14 +1,27 @@
-<div class="bs-work project-details">
+<div class="bs-work wide-details">
 
-  <div class="pdetails">
+  <div class="wide-inner">
 
     <svg class="svg_h1">
       <use xlink:href="#svg_backstop"></use>
     </svg>
     <h1>UIUX at Backstop</h1>
     <p>
-      Backstop provides a suite of software solutions for alternative investment firms.  Backstop CRM, Backstop Mobile, InvestorBridge (investor portal + CMS), and Outlook and Excel applications. Backstop was the first cloud based solution in the space, and has over 650 clients and 50,000 end users on the its different systems. Representing more than 2 trillion dollars of tracked capital in its systems.
+      Backstop provides a suite of software solutions for alternative investment firms.  Backstop CRM, Backstop Mobile, InvestorBridge (investor portal + CMS), Outlook and Excel applications. Backstop was the first cloud based solution in the space, and has over 650 clients and 50,000 end users on the its different systems and currently tracks more than 2 trillion dollars in capital.
     </p>
+  </div>
+
+  <img src="<%= asset_path 'backstop_top.jpg' %>" class="wide-image"/>
+  <h4 class="desc">
+    Backstop Mobile, Backstop CRM, InvestorBridge and the Evil J-Curve Robot.
+  </h4>
+
+  <div class="wide-inner">
+
+    <p>
+      The CRM is a 13 year old Java application built on a large range of technologies and includes functionality for deal tracking, workflow, accounting, investor relations, portfolio management, research management, email syncing and distribution.  My team is responsible for the UI/UX of ongoing feature work and bringing legacy areas of the application up to modern standards.  This includes interface design, front end development, research, and experience design.
+    </p>
+    <p>&nbsp;</p>
     <a class="bm-web circle-link" href="/backstop-web">
       <br>Backstop Website
     </a>
@@ -18,17 +31,12 @@
     <a class="bm-ib circle-link" href="/backstop-investorbridge">
       <br>InvestorBridge
     </a>
-
-    <p>
-      The CRM is a 13 year old Java application built on a large range of technologies and includes functionality for deal tracking, workflow, accounting, investor relations, portfolio management, research management, email syncing and distribution.  My team is responsible for the UI/UX of ongoing feature work and bringing legacy areas of the application up to modern standards.  This includes interface design, front end development, research, and experience design.
-    </p>
-
-    <img src="<%= asset_path 'crm02.png' %>" class="crm-image"/>
+    <p>&nbsp;</p>
     <p>
       As manager of the UIUX team I have worked to solidify processes with our engineering, product and services teams. The UIUX team built our user research program, standardized the steps for moving a project from inception to delivery, and makes sure that user advocacy, interaction, and modern interface design are applied in all steps of product development.
     </p>
-  </div>
 
-  <%= render :partial => 'layouts/project_list' %>
+    <%= render :partial => 'layouts/project_list' %>
+  </div>
 
 </div>

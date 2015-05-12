@@ -5,19 +5,43 @@ h1{
   color: $text;
   margin: 2em 0 1em;
 }
+h2{
+  font-weight: 500;
+  color: $text;
+  margin: 2em 0 0em;
+  font-size: 1.75em;
+}
+h3{
+
+}
+h4{
+  &.desc{
+    font-style: italic;
+    text-align: center;
+    color: #808080;
+    font-size: 1em;
+    font-weight: normal;
+    margin-top: -1em;
+    margin-bottom: 3em;
+
+    @include media($mobile) {
+      padding: 0 2em;
+      font-size: 1.15em;
+    }
+  }
+}
 p{
   font-size: 1.125em;
   line-height: 1.5em;
 
-  .quote{
-    font-size: 1.25em;
-    color: $e-blue;
-    text-decoration: italic;
-  }
   &.button-links{
     width: 250px;
     margin: 3em auto;
   }
+}
+.quote{
+  font-size: 1.25em;
+  font-style: italic;
 }
 a{
   color: $e-blue;
@@ -56,22 +80,20 @@ body {
   font-family: $font1;
   line-height: 1.4;
 }
-.page{
-}
 header{
   height:280px;
-  border-top: 10px solid $e-blue;
   border-bottom: 10px solid $e-blue;
   text-align: right;
   overflow: hidden;
   background:transparent asset-data-url('header_tile.gif') repeat-x;
+  transition: 1s;
 
   @include media($tablet) {
     height: 200px;
   }
   @include media($mobile) {
-  height: 150px;
-}
+    height: 150px;
+  }
 }
 div.header-inner{
   background:transparent asset-data-url('header_pic.gif') no-repeat top left;
@@ -97,9 +119,11 @@ div.header-inner{
 }
 a.logo{
   color:#fff;
+  transition: 1s;
   font-size: 5em;
   position: relative;
   top: 10px;
+  text-decoration: none;
   @include longshadow($color);
 
   &:hover{
@@ -112,6 +136,10 @@ a.logo{
     top: 0;
     font-size: 3em;
   }
+@include media($mobile) {
+  top: 0;
+  font-size: 2.5em;
+}
 }
 nav{
   position: relative;
@@ -126,15 +154,16 @@ nav{
 a.nav-main{
   padding: 0 0 0 1em;
   cursor: pointer;
-  font-size: 1.25em;
+  font-size: 1.5em;
   color: white;
-  transition: 1s;
+  transition: .5s;
+  text-decoration: none;
 
   &:hover{
     color: $e-blue;
   }
   @include media($mobile) {
-     font-size: 1em;
+     font-size: 1.125em;
   }
 }
 
@@ -162,7 +191,26 @@ section.portfolio{
   border: 1px solid #777;
   margin: 2em 0;
   @include media($teneighty) {
-    padding: 0 1em;
+    margin: 0 1em;
+  }
+}
+.proto-image{
+  width: 60%;
+  border: 1px solid #777;
+  margin: 2em 20%;
+}
+.mobile-i{
+  width: 100%;
+  border-bottom: 2px solid #777;
+  margin: 2em 0;
+}
+.wide-image{
+  width:100%;
+  margin: 2em 0;
+
+  &.borders{
+    border-top: 2px solid #777;
+    border-bottom: 2px solid #777;
   }
 }
 svg{
@@ -237,7 +285,12 @@ div.project-details{
   margin-top:  4em;
   margin-bottom: 4em;
 }
-
+div.wide-details{
+  margin: 4em 0;
+}
+.wide-inner{
+  @include small-outer;
+}
 .bm-s1{
 
 }
@@ -360,10 +413,6 @@ img.web-main{
   width: 50%;
   float:left;
   margin-right: 10%;
-  @include media($mobile) {
-
-  }
-
 }
 footer{
   clear:both;
@@ -371,6 +420,10 @@ footer{
   border-top: 10px solid $e-blue;
   min-height: 200px;
   padding: 2em 0;
+
+  @include media($mobile) {
+    padding: 2em;
+  }
 
   p{
     float:right;
@@ -383,5 +436,14 @@ footer{
   }
 }
 .footer-inner{
-  @include outer-container;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:640px;
+
+  @include media($ninesixty) {
+    padding: 0 2em;
+  }
+  @include media($mobile) {
+    padding: 0;
+  }
 }

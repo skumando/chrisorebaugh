@@ -8,5 +8,6 @@ $max-width: 960px;
 
 // Define your breakpoints
 $teneighty: new-breakpoint(max-width 1080px 12);
+$ninesixty: new-breakpoint(max-width 960px 12);
 $tablet: new-breakpoint(max-width 800px 12);
-$mobile: new-breakpoint(max-width 600px 12);
+$mobile: new-breakpoint(max-width 640px 12);

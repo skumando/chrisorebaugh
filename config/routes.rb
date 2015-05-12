@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   get 'ironwood' => 'pages#ironwood'
   get 'prototype' => 'pages#prototype'
   get 'sageify' => 'pages#sageify'
+  get 'contact' => 'pages#contact'
 
 end

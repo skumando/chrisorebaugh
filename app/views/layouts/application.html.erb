@@ -3,12 +3,13 @@
 <head>
   <title>Chris Orebaugh</title>
   <!--
-    Hi!  If you are reading this welcome to my site.  It is built using RoR and hosted on
-    OpenShift. -->
-
+    Hi!  If you are reading this welcome to my site.  It was built with love using RoR
+    and is hosted on OpenShift.  Thanks for looking under the hood.
+  -->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -16,11 +17,11 @@
 <div class="page">
 <header>
   <div class="header-inner">
-    <a class="logo">Chris Orebaugh</a>
+    <a class="logo" href="/home">Chris Orebaugh</a>
     <nav>
       <a class="nav-main" href="#recent-projects">Recent Projects</a>
       <a class="nav-main" href="/home">About Me</a>
-      <a class="nav-main">Contact</a>
+      <a class="nav-main" href="/contact">Contact</a>
     </nav>
   </div>
 
@@ -31,16 +32,17 @@
 <footer>
   <div class="footer-inner">
     <p>
+      <a name="contact"></a>
       <a href="mailto:chirsorebaugh@gmail.com">chrisorebaugh@gmail.com</a><br>
       630.373.3447<br>
       <a>Resume</a>
     </p>
-    <a href="/backstop-mobile" >
+    <a href="https://github.com/skumando" >
       <svg class="svg_footer">
         <use xlink:href="#svg_github"></use>
       </svg>
     </a>
-    <a href="/backstop-mobile" >
+    <a href="https://www.linkedin.com/in/chrisorebaugh" >
       <svg class="svg_footer">
         <use xlink:href="#svg_linkedin"></use>
       </svg>
